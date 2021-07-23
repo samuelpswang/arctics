@@ -7,6 +7,35 @@
     --DeepBlue: #003b6b;
     --Gold: #c0ac49;
     --OffWhite: #f5f5f5;
+}
+
+body {
+    background-color: var(--BabyBlue);
+}
+
+h1 {
+    width: 118px;
+    height: 71px;
+    margin: 0 372px 20px 40px;
+    font-family: jf-openhuninn-1.1;
+    font-size: 59px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--OffWhite);
+}
+
+.LogInForm {
+    width: 530px;
+    height: 524px;
+    margin: 20px 0 0;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: var(--OffWhite);
+}
+
 .Background-Asset {
     width: 1440px;
     height: 918px;
