@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './Buttons.css';
 
-function InputBox() {
-    const [dummyText, setDummyText] = useState("someInputText");
+function InputBox(props) {
+    const [dummyText] = useState("someInputText");
     
     return (
-        <input placeholder={ dummyText }></input>
+        <input className="Input-Box" placeholder={ props.dummyText }></input>
     );
 }
 
