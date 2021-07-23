@@ -13,7 +13,7 @@ function ActionButton(props) {
     const[buttonName, setButtonName] = useState("buttonName");
     
     return (
-       <button className="">{ buttonName }</button>
+       <button className="Action-Button">{ props.buttonName }</button>
     );
 }
 
