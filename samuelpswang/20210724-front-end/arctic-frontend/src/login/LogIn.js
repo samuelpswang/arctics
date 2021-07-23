@@ -30,7 +30,7 @@ function LogIn() {
         <>
             <LogInHeader />
             <LogInForm />
-            <img src={ background } alt="" />
+            <img className="Background-Asset" src={ background } alt="" />
         </>
     );
 }
