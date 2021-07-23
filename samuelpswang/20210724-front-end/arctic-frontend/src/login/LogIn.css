@@ -42,4 +42,13 @@ h1 {
     margin: 106px 0 0;
 }
 
+.Separator {
+    width: 201px;
+    height: 2px;
+    margin: 9px 8px 8px 0;
+    background-color: var(--Obsidian);
+}
+
+.LogInActionButton {
+    margin-left: 80px;
 }

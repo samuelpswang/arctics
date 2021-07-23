@@ -18,7 +18,9 @@ function LogInForm() {
             <InputBox dummyText="⬤⬤⬤⬤⬤⬤⬤⬤" />
             <p>還不是會員？按此註冊</p>
             <ActionButton buttonName="登入" />
+            <div className="Separator"></div>
             <p>或是</p>
+            <div className="Separator"></div>
             <p>使用Google登入</p>
             <p>使用Facebook登入</p>
         </div>
