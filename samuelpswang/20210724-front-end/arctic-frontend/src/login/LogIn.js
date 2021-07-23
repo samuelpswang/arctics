@@ -13,9 +13,9 @@ function LogInForm() {
     return (
         <div className="LogInForm">
             <p>帳號 (Email地址或是手機號碼)</p>
-            <InputBox />
+            <InputBox dummyText="johnnyappleseed@gmail.com" />
             <p>密碼</p>
-            <InputBox />
+            <InputBox dummyText="⬤⬤⬤⬤⬤⬤⬤⬤" />
             <p>還不是會員？按此註冊</p>
             <ActionButton />
             <p>或是</p>
