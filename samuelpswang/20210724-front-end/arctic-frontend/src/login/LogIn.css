@@ -7,4 +7,10 @@
     --DeepBlue: #003b6b;
     --Gold: #c0ac49;
     --OffWhite: #f5f5f5;
+.Background-Asset {
+    width: 1440px;
+    height: 918px;
+    margin: 106px 0 0;
+}
+
 }
