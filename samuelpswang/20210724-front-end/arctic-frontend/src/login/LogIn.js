@@ -17,7 +17,7 @@ function LogInForm() {
             <p>密碼</p>
             <InputBox dummyText="⬤⬤⬤⬤⬤⬤⬤⬤" />
             <p>還不是會員？按此註冊</p>
-            <ActionButton />
+            <ActionButton buttonName="登入" />
             <p>或是</p>
             <p>使用Google登入</p>
             <p>使用Facebook登入</p>
