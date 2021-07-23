@@ -9,3 +9,12 @@
     --OffWhite: #f5f5f5;
 }
 
+.Input-Box {
+    width: 450px;
+    height: 54px;
+    padding: 17px 208px 17px 16px;
+    border-radius: 8px;
+    border: solid 2px var(--DeepBlue);
+    background-color: var(--OffWhite);
+}
+
