@@ -23,9 +23,21 @@
 }
 
 .ActionButton {
-    width: 144px;
+    width: 156px;
     height: 48px;
-    padding: 12px 52px;
+    padding: auto;
+    border-radius: 8px;
+    background-color: var(--DeepBlue);
+
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--OffWhite);
+}
+
     border-radius: 8px;
     background-color: var(--DeepBlue);
 
