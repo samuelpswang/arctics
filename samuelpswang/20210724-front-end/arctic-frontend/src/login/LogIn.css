@@ -9,9 +9,10 @@
     --OffWhite: #f5f5f5;
 }
 
-body {
+html {
     background-color: var(--BabyBlue);
 }
+
 
 h1 {
     width: 118px;
