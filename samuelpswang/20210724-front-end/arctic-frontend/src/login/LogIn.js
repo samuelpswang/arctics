@@ -32,9 +32,11 @@ function LogInForm() {
 function LogIn() {
     return (
         <>
+            <div className="NavBarPlaceholder"></div>
             <LogInHeader />
             <LogInForm />
             <img className="Background" src={ background } alt="" />
+            <div className="FooterPlaceholder"></div>
         </>
     );
 }
