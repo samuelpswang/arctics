@@ -84,4 +84,15 @@ a {
 
 .LogInActionButton {
     margin-left: 80px;
+    display: inline-block;
+    float: right;
+}
+
+.LogInLine {
+    margin-top: 24px;
+}
+
+.LogInText {
+    margin-top: auto;
+    margin-bottom: auto;
 }
