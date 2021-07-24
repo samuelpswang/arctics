@@ -16,7 +16,17 @@ function ActionButton(props) {
     );
 }
 
+function ExternalLoginButton(props) {
+    
+    return (
+        <div>
+            <button className="ExternalLogInButton">
+                <img className="ExternalLogInButtonIcon"src={ props.iconPath } alt={ props.altText } /> 
+                { " " + props.buttonName }
+            </button>
+        </div>
+        
     );
 }
 
-export { InputBox, ActionButton };
+export { InputBox, ActionButton, ExternalLoginButton };
