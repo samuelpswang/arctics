@@ -38,6 +38,16 @@
     color: var(--OffWhite);
 }
 
+.ExternalLogInButton:first {
+    margin: 32px 0 16px;
+}
+
+.ExternalLogInButton {
+    width: 530px;
+    height: 48px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    padding: auto;
     border-radius: 8px;
     background-color: var(--DeepBlue);
 
@@ -48,4 +58,9 @@
     line-height: normal;
     letter-spacing: normal;
     color: var(--OffWhite);
-  }
+}
+
+.ExternalLogInButtonIcon {
+    margin-top: auto;
+    margin-bottom: auto;
+}
