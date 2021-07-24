@@ -28,6 +28,10 @@ h1 {
     color: var(--OffWhite);
 }
 
+a {
+    color: var(--DeepBlue);
+}
+
 .Legend {
     width: 216px;
     height: 19px;
