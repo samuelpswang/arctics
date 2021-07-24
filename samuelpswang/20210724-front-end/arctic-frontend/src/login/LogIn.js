@@ -1,6 +1,8 @@
 import './LogIn.css';
 import { InputBox, ActionButton } from '../global/Buttons';
 import background from './img/login-background.png';
+import google from './img/google-logo.svg';
+import facebook from './img/facebook-logo.svg';
 
 
 function LogInHeader() {
