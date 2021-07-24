@@ -17,7 +17,7 @@ html {
 h1 {
     width: 118px;
     height: 71px;
-    margin: 0 372px 20px 40px;
+    margin: 108px 1191px 20px 131px;
     font-family: jf-openhuninn-1.1;
     font-size: 59px;
     font-weight: normal;
@@ -49,7 +49,7 @@ a {
 .LogInForm {
     width: 530px;
     height: 524px;
-    margin: 20px 0 0;
+    margin: 0 819px 91px 89px;
     padding: 40px;
     border-radius: 25px;
     background-color: var(--OffWhite);
@@ -58,14 +58,17 @@ a {
 .Background {
     width: 1440px;
     height: 918px;
-    margin: 106px 0 0;
+    margin: 0pxx;
 }
 
 .Separator {
-    width: 201px;
+    width: 240px;
     height: 2px;
-    margin: 9px 8px 8px 0;
+    margin: 9px 0 8px 0;
     background-color: var(--Obsidian);
+    display: inline-block;
+}
+
 .NavBarPlaceholder {
     width: auto;
     height: 106px;
@@ -80,10 +83,16 @@ a {
     margin: 712px 0 0;
 }
 
+.OrText {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.OrLine {
+    margin-top: 60px;
 }
 
 .LogInActionButton {
-    margin-left: 80px;
     display: inline-block;
     float: right;
 }
