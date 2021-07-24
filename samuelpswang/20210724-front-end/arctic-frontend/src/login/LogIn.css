@@ -47,18 +47,22 @@ a {
 }
 
 .LogInForm {
+    position: absolute;
     width: 530px;
     height: 524px;
     margin: 0 819px 91px 89px;
     padding: 40px;
     border-radius: 25px;
     background-color: var(--OffWhite);
+    z-index: 1;
 }
 
 .Background {
+    position: absolute;
     width: 1440px;
     height: 918px;
     margin: 0pxx;
+    z-index: 0;
 }
 
 .Separator {
