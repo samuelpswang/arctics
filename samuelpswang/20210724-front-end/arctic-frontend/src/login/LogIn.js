@@ -1,5 +1,5 @@
 import './LogIn.css';
-import { InputBox, ActionButton } from '../global/Buttons';
+import { InputBox, ActionButton, ExternalLoginButton } from '../global/Buttons';
 import background from './img/login-background.png';
 import google from './img/google-logo.svg';
 import facebook from './img/facebook-logo.svg';
@@ -12,19 +12,17 @@ function LogInHeader() {
 }
 
 function LogInForm() {
+
     return (
         <div className="LogInForm">
             <p className="Legend">帳號 (Email地址或是手機號碼)</p>
             <InputBox dummyText="johnnyappleseed@gmail.com" />
             <p className="Legend">密碼</p>
             <InputBox dummyText="⬤⬤⬤⬤⬤⬤⬤⬤" />
-            <p>還不是會員？按此註冊</p>
-            <ActionButton buttonName="登入" />
-            <div className="Separator"></div>
-            <p>或是</p>
-            <div className="Separator"></div>
-            <p>使用Google登入</p>
-            <p>使用Facebook登入</p>
+            <p className="LogInLine"><span className="LogInText">還不是會員？<a>按此註冊</a></span><div className="LogInActionButton"><ActionButton buttonName="登入" onClick={ checkLogIn } /></div></p> 
+            <p className="OrLine"><div className="Separator"></div><span className="OrText">或是</span><div className="Separator"></div></p>
+            <ExternalLoginButton buttonName="使用Google登入" iconPath={ google } altText="Google Logo" />
+            <ExternalLoginButton buttonName="使用Facebook登入" iconPath={ facebook } altText="Facebook Logo" />
         </div>
     );
 }
