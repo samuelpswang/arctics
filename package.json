@@ -1,0 +1,8 @@
+{
+  "name": "arctic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:samuelpswang/arctic.git",
+  "author": "sean",
+  "license": "MIT"
+}
