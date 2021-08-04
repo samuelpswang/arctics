@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'jf-openhuninn-1.1';
+    src: url('fonts/jf-openhuninn-11.woff2') format('woff2');
+    src: url('fonts/jf-openhuninn-11.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary-font: "jf-openhuninn-1.1", san-serif;
+    --secondary-font: serif;
+}
+
 body {
+    font-family: var(--primary-font);
     margin: 5%;
 }
