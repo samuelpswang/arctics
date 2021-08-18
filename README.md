@@ -1,4 +1,4 @@
-# Arctics
+# arctics
 
 Arctics is a Taiwanese video mentoring platform which aims to help secondary school studetns gain firsthand college experiences. Our web app platform is built on full MERN stack, with the landing page relying on `Bootstrap 5.0`. 
 
