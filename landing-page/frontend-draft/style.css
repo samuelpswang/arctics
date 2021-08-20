@@ -15,8 +15,10 @@
 }
 
 body {
-    margin: 5%;
     font-family: var(--title-font);
+    margin: 0;
+}
+
 nav {
     position: fixed;
     top: 0px;
