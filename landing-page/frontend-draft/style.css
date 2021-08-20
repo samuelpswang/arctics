@@ -8,11 +8,13 @@
 }
 
 :root {
-    --primary-font: "jf-openhuninn-1.1", san-serif;
-    --secondary-font: serif;
+    --title-font: "jf-openhuninn-1.1", san-serif;
+    --reading-font: serif;
+    --primary-color: #003b6b;
+    --button-color: #afeff0;
 }
 
 body {
-    font-family: var(--primary-font);
     margin: 5%;
+    font-family: var(--title-font);
 }
