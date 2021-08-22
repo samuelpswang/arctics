@@ -168,6 +168,34 @@ main {
     
 }
 
+#about-us {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary);
+    align-content: flex-end;
+    padding-left: 50%;
+    padding-top: 120px;
+    padding-bottom: 190px;
+}
+
+.about-us__heading {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.about-us__heading-indent {
+    margin-left: 1.2rem;
+}
+
+.about-us__text {
+    margin-top: 32px;
+    line-height: 36px;
+    width: 312px;
+    margin-left: 12px;
+}
+
+
 }
 
 footer {
