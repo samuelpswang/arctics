@@ -22,38 +22,48 @@ body {
 nav {
     position: fixed;
     top: 0px;
-    width: 100%;
-    padding: 0 10% 0 10%;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(6px);
-    
+    width: 80%;
+    padding: 1% 10% 1% 10%;
+    background-color: rgba(255, 255, 255);
+    backdrop-filter: blur(16px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;   
 }
 
-.nav {
-    display: inline-block;
-    color: var(--primary-color);
+
+.nav__right {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
 }
 
 .nav__menu {
-    margin-left: auto;
+    margin-right: 8px;
+    color: var(--primary);
 }
 
 .nav__menu-item {
-    display: inline;
+    display: inline-block;
+    margin-right: 16px;
+    text-decoration: none;
 }
 
 .nav__action-button {
-    width: 110px;
+    border-radius: 8px;
     height: 40px;
-    background-color: var(--button-color);
-    color: var(--primary-color);
+    width: 112px;
     border: 0;
-    border-radius: 12px;
+    background-color: var(--secondary);
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    color: var(--primary);
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.nav__action-button:hover {
-    
-}
+
 
 header {
     margin-top: 100px;
