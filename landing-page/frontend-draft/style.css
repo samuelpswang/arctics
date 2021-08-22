@@ -56,7 +56,6 @@ nav {
 .nav__menu-item {
     display: inline-block;
     margin-right: 16px;
-    text-decoration: none;
 }
 
 .nav__action-button {
