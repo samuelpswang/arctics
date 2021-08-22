@@ -75,13 +75,93 @@ nav {
 
 
 header {
-    margin-top: 100px;
+    margin-top: 140px;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 122px;
+}
+
+h1 {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-size: 60px;
+    color: var(--primary);
 }
 
 .header__slogan {
-    size: 36px;
+    font-size: 32px;
+    line-height: 1.4;
+    color: var(--secondary);
+}
+
+.header__slogan-break {
+    padding-left: 4rem;
+}
+
+.header__highlight {
+    color: var(--notice);
+}
+
+.header__subtitle {
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-size: 18px;
+    color: var(--primary);
+}
+
+.header__form {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.header__function-button {
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 140px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.header__email-box {
+    border: none;
+    height: 16px;
+    width: 400px;
+    border-radius: 8px;
+    padding-left: 1rem;
+    padding-top: 13px;
+    padding-bottom: 11px;
+    margin-right: 0;
+}
+
+.header__email-box::placeholder {
+    color: var(--secondary);
+    font-family: var(--heading-font);
+    font-size: 1rem;
+}
+
+.header__email-button {
+    display: inline-block;
+    margin-left: 4px;
+    border-radius: 8px;
+    height: 40px;
+    width: 78px;
+    border: 0;
+    background-color: var(--notice);
+    color: var(--primary);
+    font-size: 16px;
+    font-family: var(--heading-font);
+    line-height: 0;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+
 }
 
 footer {
