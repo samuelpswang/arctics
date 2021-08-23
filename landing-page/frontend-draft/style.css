@@ -40,6 +40,9 @@ nav {
     align-content: center;   
 }
 
+.nav__logo {
+    align-self: center;
+}
 
 .nav__right {
     display: flex;
@@ -49,6 +52,7 @@ nav {
 
 .nav__menu {
     margin-right: 8px;
+    height: 16px;
     color: var(--primary);
 }
 
@@ -57,12 +61,20 @@ nav {
     margin-right: 16px;
 }
 
+a:visited {
+    color: var(--primary);
+}
+
+a:active {
+    color: var(--secondary);
+}
+
 .nav__action-button {
     border-radius: 8px;
     height: 40px;
     width: 112px;
     border: 0;
-    background-color: var(--secondary);
+    background-color: var(--notice);
     font-family: var(--heading-font);
     font-size: 1rem;
     color: var(--primary);
