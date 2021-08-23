@@ -313,7 +313,7 @@ h1 {
 .members__position {
     color: var(--secondary);
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 /* MEMBERS END */
@@ -322,7 +322,7 @@ h1 {
 
 #contact-us {
     color: var(--secondary);
-    padding: 180px 10% 189px 10%;
+    padding: 180px 10% 187px 10%;
     background-image: url(bkg/image-5.png);
 }
 
