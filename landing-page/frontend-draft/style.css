@@ -288,6 +288,7 @@ h1 {
 .members__box {
     background-color: white;
     padding: 16px 16px 16px 16px;
+    margin: 0 4px 0 4px;
     box-sizing: border-box;
     height: 280px;
 }
