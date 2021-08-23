@@ -136,6 +136,10 @@ h1 {
     margin-right: 16px;
 }
 
+.header__function-button:visited {
+    color: white;
+}
+
 .header__email-box {
     border: none;
     height: 16px;
