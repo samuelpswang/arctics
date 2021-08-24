@@ -246,12 +246,16 @@ h1 {
 }
 
 
-.function__one-heading, .function__two-heading, .function__three-heading {
+.function__one-heading, 
+.function__two-heading, 
+.function__three-heading {
     font-size: 24px;
     margin-bottom: 16px;
 }
 
-.function__one-description, .function__two-description, .function__three-description {
+.function__one-description, 
+.function__two-description, 
+.function__three-description {
     width: 180px;
     line-height: 1.8;
     color: white;
