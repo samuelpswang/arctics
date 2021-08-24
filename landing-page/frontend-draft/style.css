@@ -27,7 +27,11 @@ html {
 body {
     font-family: var(--heading-font);
     margin: 0;
-    background: linear-gradient(180deg, rgba(0,161,207,1) 0%, rgba(66,195,221,1) 10%, rgba(157,241,241,1) 50%, rgba(66,136,166,1) 70%, rgba(0,60,112,1) 100%);
+    background: url(/img/background.png);
+    background-size: auto 5358px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    
 }
 
 nav {
@@ -89,7 +93,6 @@ a:active {
 
 header {
     padding: 120px 10% 140px 10%;
-    background-image: url(bkg/image-1.png);
 }
 
 h1 {
@@ -189,7 +192,6 @@ h1 {
     color: var(--primary);
     align-content: flex-end;
     padding: 140px 10% 170px 60%;
-    background-image: url(bkg/image-2.png);
 }
 
 .about-us__heading {
@@ -216,7 +218,6 @@ h1 {
 #function {
     color: var(--tertiary);
     padding: 88px 10% 112px 10%;
-    background-image: url(bkg/image-3.png);
 }
 
 .function__heading {
@@ -272,7 +273,6 @@ h1 {
 
 #members {
     padding: 128px 10% 154px 10%;
-    background-image: url(bkg/image-4.png);
 }
 
 .members__heading {
@@ -323,7 +323,6 @@ h1 {
 #contact-us {
     color: var(--secondary);
     padding: 180px 10% 187px 10%;
-    background-image: url(bkg/image-5.png);
 }
 
 .contact-us__heading {
@@ -398,7 +397,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(bkg/image-6.png);
 }
 
 .footer {
