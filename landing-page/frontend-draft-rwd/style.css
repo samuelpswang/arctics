@@ -157,6 +157,7 @@ h1 {
     padding-left: 1rem;
     padding-top: 12px;
     padding-bottom: 12px;
+    line-height: 20px;
     margin-right: 0;
     color: var(--primary);
     font-family: var(--heading-font);
@@ -379,8 +380,9 @@ h1 {
 .contact-us__input {
     display: block;
     width: 360px;
-    padding-top: 13px;
-    padding-bottom: 11px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 20px;
     padding-left: 1rem;
     border-radius: 8px;
     margin-bottom: 12px;
