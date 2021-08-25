@@ -31,10 +31,11 @@ body {
     background-size: auto 5358px;
     background-repeat: no-repeat;
     background-position: top center;
-    
 }
 
-/* @media only screen and (min-width: 1098px) { */
+.light-up {
+    color: var(--tertiary);
+}
 
 nav {
     position: fixed;
@@ -405,7 +406,8 @@ h1 {
     margin-left: 4px;
     border-radius: 8px;
     height: 40px;
-    width: 78px;
+    padding-left: 1rem;
+    padding-right: 1rem;;
     border: 0;
     background-color: var(--notice);
     color: var(--primary);
@@ -449,5 +451,3 @@ footer {
     display: inline-block;
     height: 24px;
 }
-
-/* } */
