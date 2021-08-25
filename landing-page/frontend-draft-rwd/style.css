@@ -34,11 +34,13 @@ body {
     
 }
 
+/* @media only screen and (min-width: 1098px) { */
+
 nav {
     position: fixed;
     top: 0px;
     width: 80%;
-    padding: 1% 10% 1% 10%;
+    padding: 16px 10% 16px 10%;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -59,19 +61,20 @@ nav {
 .nav__menu {
     margin-right: 8px;
     height: 16px;
-    color: var(--primary);
 }
 
 .nav__menu-item {
     display: inline-block;
     margin-right: 16px;
+    color: var(--primary);
 }
 
 a:visited {
     color: var(--primary);
 }
 
-a:active {
+a:active,
+a:hover {
     color: var(--tertiary);
 }
 
@@ -170,7 +173,8 @@ h1 {
     margin-left: 4px;
     border-radius: 8px;
     height: 40px;
-    width: 78px;
+    /* width: 78px; */
+    padding: 0 1rem 0 1rem;
     border: 0;
     background-color: var(--notice);
     color: var(--primary);
@@ -216,7 +220,7 @@ h1 {
 
 #function {
     color: var(--tertiary);
-    padding: 88px 10% 112px 10%;
+    padding: 108px 10% 92px 10%;
 }
 
 .function__heading {
@@ -250,6 +254,7 @@ h1 {
 .function__three-heading {
     font-size: 24px;
     margin-bottom: 16px;
+    line-height: 1.2;
 }
 
 .function__one-description, 
@@ -275,7 +280,7 @@ h1 {
 /* MEMBERS */
 
 #members {
-    padding: 128px 10% 154px 10%;
+    padding: 108px 10% 174px 10%;
 }
 
 .members__heading {
@@ -289,6 +294,12 @@ h1 {
 }
 
 .members__first {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+}
+
+.members__second {
     display: flex;
     flex-direction: row;
     height: 350px;
@@ -338,7 +349,7 @@ h1 {
 
 #contact-us {
     color: var(--secondary);
-    padding: 180px 10% 187px 10%;
+    padding: 108px 10% 187px 10%;
 }
 
 .contact-us__heading {
@@ -438,3 +449,5 @@ footer {
     display: inline-block;
     height: 24px;
 }
+
+/* } */
