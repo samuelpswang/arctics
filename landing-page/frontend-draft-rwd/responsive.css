@@ -188,14 +188,11 @@
 
     .header__email-box {
         margin-bottom: 8px;
+        width: 45vw;
     }
 
     .header__function-button {
         margin-bottom: 16px;
-    }
-
-    .header__email-box {
-        width: 50vw;
     }
 
     .header__email-button {
