@@ -1,10 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './style.css';
+import './responsive.css';
+import Nav from './Components/Nav';
+import NavMobile from './Components/NavMobile';
+import Header from './Components/Header';
+import AboutUs from './Components/AboutUs';
+import Function from './Components/Function';
+import Members from './Components/Members';
+import ContactUs from './Components/ContactUs';
+import Foot from './Components/Foot';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <NavMobile />
+      <Nav />
+      <Header />
+      <main>
+        <AboutUs />
+        <Function />
+        <Members />
+        <ContactUs />
+      </main>
+      <Foot />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +35,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
