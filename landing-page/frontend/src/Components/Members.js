@@ -100,7 +100,7 @@ export default function Members () {
                     );}
                 })}
             </div>
-            <div class="r-members rwd-show">
+            <div className="r-members rwd-show">
                 {members.map( e=>{
                     if (e.id===0 || e.id===2 || e.id===3 || e.id===5) { return(
                         <div className="r-members__box">
