@@ -1,11 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../style.css';
 import '../responsive.css';
 import LogoImg from '../img/header-arctics-logo.png';
 
 
-// onclick="verifyEmailButton()"
 export default function Header () {
+
+    const [email, setEmail] = useState("");
+
+    const resetEmailValue = ()=>{
+        document.getElementById("email-input").value="";
+        setEmail("");
+    }
+
+    const blankValue = (value)=>{
+        if (value==="") return true;
+        else return false;
+    }
+
+    const handleButton = (e)=>{
+        if (blankValue(email)) alert("請輸入您的Email。");
+        else alert(`已提交！您的Email為：${email}`);
+        resetEmailValue();
+    }
+
     return (
         <header>
             <p className="header__slogan">
@@ -29,8 +47,8 @@ export default function Header () {
 		    <div className="header__form">
 			    <a href="#function" className="header__function-button">查看平台功能</a>
 			    <br className="rwd-show"></br>
-			    <input className="header__email-box" placeholder="留下您的Email"></input>
-			    <button className="header__email-button" id="email-button">通知我</button>
+			    <input className="header__email-box" id="email-input" placeholder="留下您的Email" onChange={e=>setEmail(e.target.value.trim())}></input>
+			    <button className="header__email-button" id="email-button" onClick={handleButton}>通知我</button>
 		    </div>
         </header>
     );

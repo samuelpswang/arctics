@@ -71,13 +71,13 @@ export default function Members () {
             <div className="members__first rwd-hide">
                 {memberFirst.map( e=>{
                     if (e.id %2===0) { return(
-                        <div className="members__box">
+                        <div className="members__box" key={e.id}>
                             <img className="members__photo" src={e.image} alt={e.altText}></img>
                             <h3 className="members__name">{e.chName}<br></br>{e.name}</h3><p className="members__position">{e.position}</p>
                         </div>
                     );}
                     else { return(
-                        <div className="members__box members__flex_end">
+                        <div className="members__box members__flex_end" key={e.id}>
                             <img className="members__photo" src={e.image} alt={e.altText}></img>
                             <h3 className="members__name">{e.chName}<br></br>{e.name}</h3><p className="members__position">{e.position}</p>
                         </div>
@@ -87,13 +87,13 @@ export default function Members () {
             <div className="members__second rwd-hide">
                 {memberSecond.map( e=>{
                     if (e.id %2===0) { return(
-                        <div className="members__box">
+                        <div className="members__box" key={e.id}>
                             <img className="members__photo" src={e.image} alt={e.altText}></img>
                             <h3 className="members__name">{e.chName}<br></br>{e.name}</h3><p className="members__position">{e.position}</p>
                         </div>
                     );}
                     else { return(
-                        <div className="members__box members__flex_end">
+                        <div className="members__box members__flex_end" key={e.id}>
                             <img className="members__photo" src={e.image} alt={e.altText}></img>
                             <h3 className="members__name">{e.chName}<br></br>{e.name}</h3><p className="members__position">{e.position}</p>
                         </div>
@@ -103,13 +103,13 @@ export default function Members () {
             <div className="r-members rwd-show">
                 {members.map( e=>{
                     if (e.id===0 || e.id===2 || e.id===3 || e.id===5) { return(
-                        <div className="r-members__box">
+                        <div className="r-members__box" key={e.id+7}>
                             <img className="members__photo" src={e.image} alt={e.altText}></img>
                             <h3 className="members__name">{e.chName}<br></br>{e.name}</h3><p className="members__position">{e.position}</p>
                         </div>
                     );}
                     else { return(
-                        <div className="r-members__box members__flex_end">
+                        <div className="r-members__box members__flex_end" key={e.id+7}>
                             <img className="members__photo" src={e.image} alt={e.altText}></img>
                             <h3 className="members__name">{e.chName}<br></br>{e.name}</h3><p className="members__position">{e.position}</p>
                         </div>
