@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import  * as smoothscroll from 'smoothscroll-polyfill';
 import './index.css';
 import './style.css';
 import './responsive.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// kick off the polyfill!
+smoothscroll.polyfill();
+
 
 ReactDOM.render(
   <React.StrictMode>

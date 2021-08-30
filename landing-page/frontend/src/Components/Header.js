@@ -25,7 +25,7 @@ export default function Header () {
     }
 
     return (
-        <header>
+        <header id="top">
             <p className="header__slogan">
                 <span className="rwd-hide">「</span>
                 大學生的
