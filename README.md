@@ -1,1 +1,12 @@
-# arctic
+# arctics
+
+Arctics is a Taiwanese video mentoring platform which aims to help secondary school studetns gain firsthand college experiences. Our web app platform is built on full MERN stack, with the landing page relying on `Bootstrap 5.0`. 
+
+To find out more about our services, check out our [landing page](www.arctics.academy/home) or email us at arctics.academic666@gmail.com.
+
+## Develop commands
+
+- `cd landing-page`
+  - `yarn server` to make server running and connect to database
+  - `yarn dev` to run the webapp on localhost
+
