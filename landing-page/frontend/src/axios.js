@@ -5,19 +5,19 @@ const instance = axios.create({
 })
 
 const submitSubscriber = async (email) => {
-  const { data: { type, msg } } = await instance.post('/subscribe-box', {
+  const { data: { type, message } } = await instance.post('/subscribe-box', {
     email
   })
   console.log('email', email)
-  return {type, msg}
+  return { type, msg: message }
 }
 
 const submitMessageForm = async (form) => {
-  const { data: { type, msg } } = await instance.post('/message-form', {
+  const { data: { type, message } } = await instance.post('/message-form', {
     form
   })
   console.log('form', form)
-  return { type, msg }
+  return { type, msg:message }
 }
 
 export { submitSubscriber, submitMessageForm }

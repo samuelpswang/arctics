@@ -3,7 +3,7 @@ import '../style.css';
 import '../responsive.css'
 import LogoImg from '../img/header-arctics-logo.png';
 import { submitSubscriber } from '../axios';
-
+import { successSubscribe, invalidSubmission } from './modal/subscribeModal';
 
 export default function Header () {
 
@@ -14,14 +14,30 @@ export default function Header () {
         else return false;
     }
 
-    const handleButton = async ()=>{
-        if (blankValue(email)) alert("請輸入Email。")
-        else{    
-            console.log(email);
-            alert("提交成功！若之後有新訊息我們會通知您。")
+    const validateInput = (input) => {
+        const atPosition = input.indexOf('@')
+        if (atPosition > 0) {
+            const username = input.slice(0, atPosition)
+            const domain = input.slice(atPosition+1)
+
+            const usrnameTest = /^[\x00-\x7F]*$/.test(username)
+            const domainTest = /^[A-Za-z0-9.-]+$/.test(domain)
+
+            if (usrnameTest && domainTest) return true
         }
-        const {type, msg} = await submitSubscriber(email)
-        console.log(type, msg)
+
+        return false
+    }
+
+    const handleButton = async () => {
+        if (blankValue(email)) {} //invalidSubmission()
+        else{    
+            if (validateInput(email)) {
+                const {type, msg} = await submitSubscriber(email)
+                console.log(type, msg)
+                //successSubscribe()
+            } //else invalidSubmission()
+        }   
         setEmail('');
     }
 
