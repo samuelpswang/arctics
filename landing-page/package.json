@@ -1,0 +1,13 @@
+{
+  "name": "arctic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:samuelpswang/arctic.git",
+  "author": "arctic team",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cd frontend && yarn start",
+    "server": "cd backend && yarn server"
+  },
+  "dependencies": {}
+}
