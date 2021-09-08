@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { submitMessageForm } from '../axios';
 import '../style.css';
 import '../responsive.css';
-import { feedbackModal } from './modal/feedbackModal';
+//import { feedbackModal } from './modal/feedbackModal';
 
 export default function ContactUs () {
 

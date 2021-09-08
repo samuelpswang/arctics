@@ -3,7 +3,7 @@ import '../style.css';
 import '../responsive.css'
 import LogoImg from '../img/header-arctics-logo.png';
 import { submitSubscriber } from '../axios';
-import { successSubscribe, invalidSubmission } from './modal/subscribeModal';
+//import { successSubscribe, invalidSubmission } from './modal/subscribeModal';
 
 export default function Header () {
 
@@ -36,7 +36,7 @@ export default function Header () {
                 const {type, msg} = await submitSubscriber(email)
                 console.log(type, msg)
                 //successSubscribe()
-            } //else invalidSubmission()
+            }// else invalidSubmission()
         }   
         setEmail('');
     }

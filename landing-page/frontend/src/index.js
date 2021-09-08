@@ -5,6 +5,7 @@ import './index.css';
 import './style.css';
 import './responsive.css';
 import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 // kick off the polyfill!
@@ -13,7 +14,9 @@ smoothscroll.polyfill();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

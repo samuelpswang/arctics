@@ -1,29 +1,23 @@
+import Nav from '../src/Components/Nav';
+import NavMobile from '../src/Components/NavMobile';
+import Foot from '../src/Components/Foot';
+import LandingPage from '../src/Containers/LandingPage'
+import { Switch, Route } from 'react-router-dom';
 import './style.css';
 import './responsive.css';
-import Nav from './Components/Nav';
-import NavMobile from './Components/NavMobile';
-import Header from './Components/Header';
-import AboutUs from './Components/AboutUs';
-import Function from './Components/Function';
-import Members from './Components/Members';
-import ContactUs from './Components/ContactUs';
-import Foot from './Components/Foot';
-
-function App() {
+//TODO: tidy structure -> move navbar to here and add switch routers
+//TODO: static.json ! 
+const App = () => {
   return (
     <div className="App">
       <NavMobile />
       <Nav />
-      <Header />
-      <main>
-        <AboutUs />
-        <Function />
-        <Members />
-        <ContactUs />
-      </main>
+      <Switch>
+        <Route path="/home" component={LandingPage} />
+      </Switch>
       <Foot />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
