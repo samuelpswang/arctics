@@ -8,10 +8,19 @@ import { submitSubscriber } from '../axios';
 export default function Header () {
 
     const [email, setEmail] = useState("");
-
+    const [confirmText, setConfirmText] = useState("通知我")
+    const [popVis, setPopVis] = useState(false)
     const blankValue = (value)=>{
         if (value==="") return true;
         else return false;
+    }
+
+    const popText = (vis) => {
+        if (vis) {
+            return (
+                <p className="popText" style={{marginLeft:'150px', color:'red'}}>請輸入正確email地址！</p>
+            )
+        }
     }
 
     const validateInput = (input) => {
@@ -30,13 +39,27 @@ export default function Header () {
     }
 
     const handleButton = async () => {
-        if (blankValue(email)) {} //invalidSubmission()
-        else{    
+        if (blankValue(email)) {
+            setConfirmText("輸入格式不符！")
+            setPopVis(true)
+            setTimeout(()=> {
+                setConfirmText("通知我")
+                setPopVis(false)
+            }, 750)
+        } else{    
             if (validateInput(email)) {
                 const {type, msg} = await submitSubscriber(email)
                 console.log(type, msg)
-                //successSubscribe()
-            }// else invalidSubmission()
+                setConfirmText("已送出！")
+                setTimeout(()=>{setConfirmText("通知我")}, 750)
+            } else {
+                setConfirmText("輸入格式不符！")
+                setPopVis(true)
+                setTimeout(()=> {
+                    setConfirmText("通知我")
+                    setPopVis(false)
+                }, 750)
+            }
         }   
         setEmail('');
     }
@@ -64,9 +87,10 @@ export default function Header () {
 		    <div className="header__form">
 			    <a href="#function" className="header__function-button">查看平台功能</a>
 			    <br className="rwd-show"></br>
-			    <input className="header__email-box" id="email-input" placeholder="留下您的Email，讓我們通知您最新消息" value={email} onChange={e=>setEmail(e.target.value.trim())}></input>
-			    <button className="header__email-button" id="email-button" onClick={handleButton}>通知我</button>
+			    <input className="header__email-box" id="email-input" placeholder="留下您的Email，讓我們通知您最新消息" value={email} onChange={e=>setEmail(e.target.value.trim())} style={{borderColor: "red", border: "2px"}}></input>
+			    <button className="header__email-button" id="email-button" onClick={handleButton}>{confirmText}</button>
 		    </div>
+            {popText(popVis)}
         </header>
     );
 }

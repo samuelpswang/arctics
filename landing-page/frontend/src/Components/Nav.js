@@ -22,8 +22,9 @@ export default function Nav() {
 				    <li className="nav__menu-item"><a href="#members" onClick={handleScrollMembers}>團隊成員</a></li>
 				    <li className="nav__menu-item" ><a href="#contact-us" onClick={handleScrollContact}>聯絡我們</a></li>
 			    </ul>
-			    <button className="nav__action-button">註冊 / 登入</button>
 		    </div>
 	    </nav>
     );
 }
+
+//<button className="nav__action-button">註冊 / 登入</button> => temporary removed

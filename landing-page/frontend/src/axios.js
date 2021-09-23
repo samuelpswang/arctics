@@ -1,7 +1,9 @@
 import axios from 'axios'
 
+const url = "https://arctics-academic.herokuapp.com/"
+
 const instance = axios.create({
-  baseURL: "http://localhost:4000/"
+  baseURL: url || "http://localhost:4000/"
 })
 
 const submitSubscriber = async (email) => {
