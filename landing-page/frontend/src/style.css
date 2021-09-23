@@ -294,7 +294,7 @@ h1 {
 /* MEMBERS */
 
 #members {
-    padding: 108px 10% 174px 10%;
+    padding: 68px 10% 174px 10%;
 }
 
 .members__heading {
@@ -329,7 +329,7 @@ h1 {
 @media only screen and (min-width: 1098px) {
     .members__second {
         margin-left: 180px;
-        margin-top: -40px;
+        margin-top: -10px;
     }
 }
 
